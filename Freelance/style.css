@@ -1,0 +1,71 @@
+:root{
+    --primary: #ffc107;
+    --secondary: #0097a9;
+    --white: #ffffff;
+    --grey: #757575;
+    --dark: #212121;
+
+}
+
+@font-face {
+    font-family: "Krub", sans-serif;
+    src: url('fonts/Krub/Krub-Regular.ttf');
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+}
+
+*,*::before, *::after{
+
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilos generales */
+body{
+    font-family: 'Krub, sans serif';
+}
+
+h1{
+    font-size: 3rem;
+}
+
+h2{
+    font-size: 2.4rem;
+}
+
+h3{
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+/*Contenedor*/
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Header*/
+.header__nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__link{
+    font-style: 2.4rem;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+@media screen and (min-width: 768px) {
+    .header__nav{
+        flex-direction: row;
+        justify-content: space-between;
+    }    
+}
