@@ -6,6 +6,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/557ccbb98e.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -24,23 +27,104 @@
 
     <section class="hero">
 
-        <h1 class="hero__title">Diseño y Desarrollo Web Freelance</h1>
+        <div class="hero__container">
+            <h1 class="hero__title">Diseño y Desarrollo Web Freelance</h1>
 
-        <div>
-        <p class="hero__text"><i class="fas fa-map-marker-alt"></i>Utrera, Sevilla</p>
+            <div class="">
+                <p class="hero__text"><i class="fas fa-map-marker-alt"></i>Utrera, Sevilla</p>
+            </div>
+            
+            <a href="#" class="hero__btn">Contactanos</a>
         </div>
         
     </section>
 
-    <div>
+    <div class="container__services__contact container">
 
         <!-- Main -->
-        <main>
+        <main class="services">
             
+            <h2 class="services__title">Nuestros servicios</h2>
+
+            <div class="services__container">
+
+
+                <article class="services__service">
+                    <h3 class="services__title text__center">Diseño web</h3>
+
+                    <div class="services__icon">
+                        <i class="fas fa-pen-square"></i>
+                    </div>
+
+                    <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis magni voluptates blanditiis libero ullam fugit pariatur commodi quisquam quidem!</p>
+                </article>
+
+                <article class="services__service">
+                    <h3 class="services__title text__center">Aplicaciones móviles</h3>
+
+                    <div class="services__icon">
+                        <i class="fa-brands fa-android"></i>
+                        <i class="fa-brands fa-apple"></i>
+                    </div>
+
+                    <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis magni voluptates blanditiis libero ullam fugit pariatur commodi quisquam quidem!</p>
+                </article>
+
+                <article class="services__service">
+                    <h3 class="services__title text__center">Redes sociales</h3>
+
+                    <div class="services__icon">
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+
+                    <p class="services__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos reiciendis magni voluptates blanditiis libero ullam fugit pariatur commodi quisquam quidem!</p>
+                </article>
+
+                
+            </div>
+
+
+
         </main>
         <!-- Contact -->
         
-        <section>
+        <section class="contact container">
+
+            <form action="#" class="contact__form">
+
+                <legend class="contact__legend">Contactanos</legend>
+
+                <div class="contact__container">
+
+                    <div class="contact__field">
+                        <label for="">Nombre:</label>
+                        <input type="text" placeholder="Nombre:">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="">Telefono:</label>
+                        <input type="tel" placeholder="Telefono">
+                    </div>
+
+                    <div class="contact__field">
+                        <label for="">Correo:</label>
+                        <input type="email" placeholder="email">
+                    </div>
+
+
+                    <div class="contact__field">
+                        <label for="">Mensaje:</label>
+                        <textarea placeholder="Mensaje"></textarea>
+                    </div>
+
+                </div>
+
+                <div class="contact__submit">
+                    <input class="contact__btn" type="submit" value="enviar">
+                </div>
+
+            </form>
             
         </section>
         

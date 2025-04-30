@@ -1,16 +1,18 @@
 :root{
     --primary: #ffc107;
     --secondary: #0097a9;
+    --secondary-darker: #00626d;
     --white: #ffffff;
+    --lightgray: #c2cad0;
     --grey: #757575;
     --dark: #212121;
 
 }
-
+/* 
 @font-face {
-    font-family: "Krub", sans-serif;
+    font-family: 'Krub', sans-serif;
     src: url('fonts/Krub/Krub-Regular.ttf');
-}
+} */
 
 html{
     box-sizing: border-box;
@@ -27,15 +29,17 @@ html{
 
 /* Estilos generales */
 body{
-    font-family: 'Krub, sans serif';
+    font-family: "Krub", sans-serif;
+    min-height: 100vw;
+    background-image: linear-gradient(to bottom, var(--white) 0%, var(--lightgray));
 }
 
 h1{
-    font-size: 3rem;
+    font-size: 3.4rem;
 }
 
 h2{
-    font-size: 2.4rem;
+    font-size: 2.8rem;
 }
 
 h3{
@@ -58,14 +62,214 @@ h3{
 }
 
 .header__link{
-    font-style: 2.4rem;
+    font-size: 2.4rem;
     text-decoration: none;
     color: var(--dark);
+    padding: 1rem;
 }
+
+.text__center{
+    text-align: center;
+}
+
+
 
 @media screen and (min-width: 768px) {
     .header__nav{
         flex-direction: row;
         justify-content: space-between;
     }    
+    .header__link:last-of-type{
+        margin-bottom: 0;
+    }
 }
+
+.hero{
+    background-image: linear-gradient(to right, rgba(118, 128, 129, 0.5) , rgba(87, 89, 92, 0.8)), url("img/hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.hero__container{
+    color: var(--white);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    gap: 2rem;
+
+
+    i{
+        color: var(--primary);
+        font-size: 5rem;
+        padding-right: 1rem;
+    }
+
+    }
+    .hero__text{
+        font-size: 2rem;
+    }
+
+    .hero__title{
+        font-size: 3.4rem;
+        line-height: 2;
+    }
+
+    .hero__btn{
+        background-color: var(--secondary);
+        padding: 1rem 3rem;
+        border-radius: 5px;
+        color: var(--white);
+        font-size: 2rem;
+        font-weight: 700;
+        text-decoration: none;
+        text-transform: uppercase;
+        transition: background-color 0.5s;
+        margin-top: 1rem;
+    }
+
+    .hero__btn:hover{
+        background-color: var(--secondary-darker);
+
+    }
+    
+    
+
+    .container__services__contact{
+        background-color: var(--white);
+        border-radius: 10px;
+        box-shadow: 0px 11px 15px -9px var(--dark);
+        padding: 3rem;
+    }
+
+    .services__container{
+        
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .services__title .contact__title{
+        margin-bottom: 2.6rem;
+        
+        font-size: 3rem;
+
+    }
+
+    .services__subtitle{
+        font-size: 2rem;
+        color: var(--secondary);
+    }
+
+    .services__service{
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        gap: 1rem;
+        align-items: center;
+
+    }
+
+    .services__icon{
+
+        background-color: var(--primary);
+        border-radius: 50%;
+        height: 100px;
+        width: 100px;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        
+
+        & i{
+            color: var(--dark);
+            font-size: 3rem;
+
+        }
+    }
+
+    @media screen and (min-width: 768px ){
+        
+        .services__container{
+            flex-direction: row;
+
+        }
+
+        .services__service{
+            flex: 1;
+        }
+
+        .services__icon{
+            margin-top: auto;
+        }
+    }
+
+    .contact__form{
+        
+        background-color: var(--grey);
+        border-radius: 10px;
+        padding: 3rem;
+    }
+
+    .contact__legend{
+        color: var(--primary);
+        font-size: 2.2rem;
+        margin-bottom: 3rem;
+    }
+
+    .contact__container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact__field{
+        display: flex;
+        margin-bottom: 1.6rem;
+        align-items: center;
+
+        & label{
+            color: var(--white);
+            font-size: 1.8rem;
+            align-items: center;
+            flex: 0 0 80px;
+        }
+    }
+
+    .contact__field input[type="text"],
+    .contact__field input[type="tel"],
+    .contact__field input[type="email"],
+    .contact__field textarea{
+        flex: 1;
+        height: 2rem;
+    }
+
+    .contact__field textarea{
+    
+        height: 7rem;
+    
+    }
+
+    @media screen and (min-width: 768px) {
+        .contact__form{
+            max-width: 800px;
+            margin-inline: auto;
+        }
+
+        .contact__container{
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+       
+    }
