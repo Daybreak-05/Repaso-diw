@@ -120,9 +120,10 @@ h3{
         line-height: 2;
     }
 
-    .hero__btn{
+    .hero__btn, .contact__btn{
         background-color: var(--secondary);
         padding: 1rem 3rem;
+        border-style: none;
         border-radius: 5px;
         color: var(--white);
         font-size: 2rem;
@@ -133,7 +134,7 @@ h3{
         margin-top: 1rem;
     }
 
-    .hero__btn:hover{
+    .hero__btn:hover, .contact__btn:hover{
         background-color: var(--secondary-darker);
 
     }
@@ -227,10 +228,7 @@ h3{
         margin-bottom: 3rem;
     }
 
-    .contact__container{
-        display: flex;
-        flex-direction: column;
-    }
+    
 
     .contact__field{
         display: flex;
@@ -241,7 +239,7 @@ h3{
             color: var(--white);
             font-size: 1.8rem;
             align-items: center;
-            flex: 0 0 80px;
+            flex: 0 0 calc(50% - 1rem);
         }
     }
 
@@ -259,6 +257,10 @@ h3{
     
     }
 
+    .contact__btn{
+        cursor: pointer;
+    }
+
     @media screen and (min-width: 768px) {
         .contact__form{
             max-width: 800px;
@@ -271,5 +273,13 @@ h3{
             flex-wrap: wrap;
             gap: 1rem;
         }
-       
+       .contact__field--100{
+        flex: 0 0 100%;
+       }
+       .contact__submit{
+        display: flex;       
+        justify-content: center;
+    
+        
+    }
     }

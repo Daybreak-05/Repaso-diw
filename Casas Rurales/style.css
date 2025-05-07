@@ -1,0 +1,145 @@
+:root{
+    --black: #000000;
+    --white: #ffffff;
+    --dark: #212121;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+body{
+    font-family: "Raleway", sans-serif;
+    font-size: 1.6rem;
+}
+h1, h2, h3{
+    font-weight: 800;
+}
+h1{
+    font-size: 3.4rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 2rem;
+    color: var(--secondary);
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+}
+
+.text__center{
+    text-align: center;
+}
+
+.mt-5{
+    margin-top: 5rem;
+}
+
+svg{
+    width: 20px;
+    height: auto;
+}
+
+
+/* Header */
+
+
+/* .hero{
+    color: var(--white);
+    background-image: url("recursos_casas-rurales/img/hero.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 10rem;
+    height: 300px;
+} */
+.hero__content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--white);
+    height: 60rem;
+}
+/* .hero__title{
+    color: var(--white);
+    text-align: center;
+}
+.hero__title__light{
+    font-weight: 200;
+}
+
+.hero__nav{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.hero__links{ 
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+.hero__links a{
+    flex-direction: column;
+    padding: 1rem;
+    color: var(--white);
+    text-decoration: none;
+}
+.hero__links li{
+    list-style: none;
+}
+.hero__subtitle{
+    font-size: 2rem;
+    color: var(--white);
+} */
+
+.hero{
+    background-image: url("recursos_casas-rurales/img/hero.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 60rem;
+    padding: 5rem;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 0;
+    flex-direction: column;
+}
+.navbar__contact{
+    color: var(--white);
+}
+
+.navbar__logo span{
+    font-weight: 200;
+}
+
+@media screen and (min-width: 992) {
+    .navbar{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+}
+
+
+
