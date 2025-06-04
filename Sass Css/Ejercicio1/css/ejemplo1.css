@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-family: Verdana;
+  color: #caca00;
+}
+
+p {
+  color: #feafe0;
+}
+
+main div p {
+  background-color: #fff000;
+}
+
+/*# sourceMappingURL=ejemplo1.css.map */

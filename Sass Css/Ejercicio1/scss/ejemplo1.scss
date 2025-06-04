@@ -1,0 +1,27 @@
+$color1: #feafe0; 
+$color2:  #caca00;
+
+$font1:sans-serif;
+$font2:Verdana;
+
+body{
+    font-family: $font1;
+}
+
+h1{
+    font-family: $font2;
+    color: $color2;
+}
+
+p{
+    color: $color1;
+}
+
+
+main{
+    div{
+        p{
+            background-color: #fff000;
+        }
+    }
+}

@@ -1,0 +1,17 @@
+// 1) @use "vars";
+
+// 2) Alias: 
+@use "vars" as v with (
+    $body-color: aquamarine,
+    $h1-color: tomato
+);
+
+// 3) Valores por defecto
+
+body{
+    background-color: v.$body-color;
+    font-size: v.$body-font-size;
+}h1{
+    color: v.$h1-color;
+    font-size: v.$h1-size;
+}
