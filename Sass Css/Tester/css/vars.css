@@ -1,0 +1,14 @@
+@font-face {
+  font-family: "Outfit Regular";
+  src: url("../assets/fonts/Outfit-Regular.ttf");
+}
+@font-face {
+  font-family: "Outfit Bold";
+  src: url("../assets/fonts/Outfit-Bold.ttf");
+}
+@font-face {
+  font-family: "Outfit ExtraBold";
+  src: url("../assets/fonts/Outfit-ExtraBold.ttf");
+}
+
+/*# sourceMappingURL=vars.css.map */

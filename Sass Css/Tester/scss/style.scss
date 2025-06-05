@@ -1,0 +1,108 @@
+@use 'vars' as v;
+@use 'sass:color';
+
+//Mixins
+//box sizing
+@mixin box-sizing($box-model){
+    box-sizing: $box-model;
+}
+
+//crear grid
+@mixin do-grid($num-colum, $gap: 10px){
+
+    display: grid;
+    grid-template-columns: repeat($num-colum, 1fr);
+    gap: $gap;
+
+}
+
+//Boton
+
+@mixin btn($bgcolor, $fgcolor){
+    background-color: $bgcolor;
+    border: 0;
+    border-radius: 1rem;
+    color: $fgcolor;
+    display: block;
+    font-weight: 700;
+    padding: 1.2rem 3rem;
+    text-align: center;
+    width: 100%;
+
+
+
+    @include tablet(){
+        width: auto;
+    }
+
+
+
+    //Transicion
+    transition: background-color .3s ;
+
+    &:hover{
+        background-color: color.adjust($bgcolor, $lightness: -20%);
+    }
+
+}
+
+//Transiciones
+
+@mixin translate($x, $y){
+    transform: translate($x, $y);
+    @include transition(.3s, transform);
+
+}
+
+@mixin rotate($deg){
+    transform: rotate($deg);
+    @include transition(.3s, transform);
+}
+
+@mixin scale($x, $y){
+    transform: scale($x, $y);
+    @include transition(.3s, transform);
+}
+
+@mixin skew($x, $y){
+    transform: skew($x, $y);
+    @include transition(.3s, transform);
+}
+
+@mixin transition($time, $property){
+    transition: $property $time;
+}
+
+
+//Media queries 
+@mixin mobile{
+    @media screen and (min-width: v.$small){
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width: v.$medium){
+        @content;
+    }
+}
+
+@mixin desktop{
+    @media screen and (min-width: v.$big){
+        @content;
+    }
+}
+
+// Example of transitions
+
+.btn{
+    @include btn(v.$main-color, v.$white);
+}
+
+// .btn:hover{
+//     @include translate(0, -5px);
+//     @include rotate(5deg);
+//     @include scale(1.1, 1.1);
+//     @include skew(5deg, 5deg);
+    
+// }

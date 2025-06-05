@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "Outfit Regular";
+  src: url("../assets/fonts/Outfit-Regular.ttf");
+}
+@font-face {
+  font-family: "Outfit Bold";
+  src: url("../assets/fonts/Outfit-Bold.ttf");
+}
+@font-face {
+  font-family: "Outfit ExtraBold";
+  src: url("../assets/fonts/Outfit-ExtraBold.ttf");
+}
+.btn {
+  background-color: #e99403;
+  border: 0;
+  border-radius: 1rem;
+  color: #ffffff;
+  display: block;
+  font-weight: 700;
+  padding: 1.2rem 3rem;
+  text-align: center;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    width: auto;
+  }
+}
+.btn:hover {
+  background-color: rgb(132.2966101695, 84.0338983051, 1.7033898305);
+}
+
+/*# sourceMappingURL=style.css.map */

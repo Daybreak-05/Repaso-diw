@@ -1,0 +1,43 @@
+//Fuentes
+$fontprimary: "Outfit Regular";
+$fontsecondary: "Outfit Bold";
+$fonttitles: "Outfit Extrabold";
+
+$sizetitle: 48px;
+$sizetext: 14px;
+$sizeprice: 40px;
+$sizesubtitle: 30px;
+$sizeguitartitle: 25px;
+
+//Colores
+$main-color: #e99403;
+$secondary-color: #455a64;
+$black: #000000;
+$gray: #262626;
+$white: #ffffff;
+
+//Separacion
+$spacing: 5rem;
+$border: .4rem .2rem;
+
+//Tamaño media-queries
+$medium: 768px;
+$big: 992px;
+
+
+
+@font-face {
+    font-family: 'Outfit Regular';
+    src: url('../assets/fonts/Outfit-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit Bold';
+    src: url('../assets/fonts/Outfit-Bold.ttf');
+}
+
+@font-face {
+    font-family: 'Outfit ExtraBold';
+    src: url('../assets/fonts/Outfit-ExtraBold.ttf');
+}
+
